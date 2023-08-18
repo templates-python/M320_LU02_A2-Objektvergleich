@@ -39,25 +39,42 @@ class ObjectIdentity:
         Wenn Ihnen nicht klar ist, wie man das macht, suchen Sie im Internet nach Lösungen,
         z.B. diese hier -> https://www.pythontutorial.net/python-oop/python-__eq__/.
         '''
-        pass
+        if isinstance(other, ObjectIdentity):
+            return self.text == other.text
+        elif isinstance(other, str):
+            return self.text == other
+        return False
 
 
 if __name__ == "__main__":
     # erzeugen Sie hier 2 Objekt obj1 und obj2 der Klasse ObjectIdentity.
-    # TODO
-    
+    # do it
+    obj1 = ObjectIdentity("auf ein Wort")
+    obj2 = ObjectIdentity("auf ein Wort")
+
     ##
     # prüfen der Klassenzugehörigkeit von obj1 zur Klasse ObjectIdentity
     # Geben Sie je nach Testergebnis einen passenden Text aus.
-    # TODO
-    
+    # do it
+    if isinstance(obj1, ObjectIdentity):
+        print("obj1 ist vom Typ ObjectIdentity")
+    else:
+        print("obj1 ist nicht vom Typ ObjectIdentity")
+
     ##
     # prüfen Sie, ob die beiden Objekte obj1 und obj2 identisch sind.
     # Geben Sie je nacht Testergebnis einen passenden Text aus.
-    # TODO
+    # do it
+    if obj1 is obj2:
+        print("ob1 und obj2 sind identisch")
+    else:
+        print("obj1 und obj2 sind nicht identisch")
 
     ##
     # prüfen Sie hier den Inhalt (das Attribut) der beiden Objekte auf Gleichheit.
     # Beachten Sie dazu auch die Hinweise in der Methode __eq__
-    # TODO
-    pass
+    # do it
+    if obj1 == obj2:
+        print("obj1 und obj2 haben den gleichen Inhalt")
+    else:
+        print("obj1 und obj2 haben unterschiedlichen Inhalt")
