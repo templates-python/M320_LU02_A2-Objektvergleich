@@ -19,7 +19,7 @@ class ObjectIdentity:
         Liefert den Wert des Attributs
         :return: aktueller Text
         """
-        return self.__text
+        return self._text
 
     @text.setter
     def text(self, value):
@@ -27,7 +27,7 @@ class ObjectIdentity:
         Schreibt den Wert von value ins Attribut.
         :param value: ein beliebiger Text
         """
-        self.__text = value
+        self._text = value
 
     def __eq__(self, other):
         '''
