@@ -19,7 +19,7 @@ class ObjectIdentity:
         Liefert den Wert des Attributs
         :return: aktueller Text
         """
-        return self.__text
+        return self._text
 
     @text.setter
     def text(self, value):
@@ -27,7 +27,7 @@ class ObjectIdentity:
         Schreibt den Wert von value ins Attribut.
         :param value: ein beliebiger Text
         """
-        self.__text = value
+        self._text = value
 
     def __eq__(self, other):
         '''
@@ -49,32 +49,32 @@ class ObjectIdentity:
 if __name__ == "__main__":
     # erzeugen Sie hier 2 Objekt obj1 und obj2 der Klasse ObjectIdentity.
     # do it
-    obj1 = ObjectIdentity("auf ein Wort")
-    obj2 = ObjectIdentity("auf ein Wort")
+    obj1 = ObjectIdentity('auf ein Wort')
+    obj2 = ObjectIdentity('auf ein Wort')
 
     ##
     # prüfen der Klassenzugehörigkeit von obj1 zur Klasse ObjectIdentity
     # Geben Sie je nach Testergebnis einen passenden Text aus.
     # do it
     if isinstance(obj1, ObjectIdentity):
-        print("obj1 ist vom Typ ObjectIdentity")
+        print('obj1 ist vom Typ ObjectIdentity')
     else:
-        print("obj1 ist nicht vom Typ ObjectIdentity")
+        print('obj1 ist nicht vom Typ ObjectIdentity')
 
     ##
     # prüfen Sie, ob die beiden Objekte obj1 und obj2 identisch sind.
     # Geben Sie je nacht Testergebnis einen passenden Text aus.
     # do it
     if obj1 is obj2:
-        print("ob1 und obj2 sind identisch")
+        print('ob1 und obj2 sind identisch')
     else:
-        print("obj1 und obj2 sind nicht identisch")
+        print('obj1 und obj2 sind nicht identisch')
 
     ##
     # prüfen Sie hier den Inhalt (das Attribut) der beiden Objekte auf Gleichheit.
     # Beachten Sie dazu auch die Hinweise in der Methode __eq__
     # do it
     if obj1 == obj2:
-        print("obj1 und obj2 haben den gleichen Inhalt")
+        print('obj1 und obj2 haben den gleichen Inhalt')
     else:
-        print("obj1 und obj2 haben unterschiedlichen Inhalt")
+        print('obj1 und obj2 haben unterschiedlichen Inhalt')
