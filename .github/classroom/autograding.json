@@ -1,6 +1,5 @@
 {
   "tests": [
-
     {
       "name": "Pytest",
       "setup": "sudo -H pip3 install -r requirements.txt",
@@ -9,9 +8,9 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
     },
-     {
+    {
       "name": "Pytest",
       "setup": "sudo -H pip3 install -r requirements.txt",
       "run": "pytest -v  -k \"test_change_text\"",
@@ -19,9 +18,9 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
     },
-     {
+    {
       "name": "Pytest",
       "setup": "sudo -H pip3 install -r requirements.txt",
       "run": "pytest -v  -k \"test_equal_objects\"",
@@ -29,9 +28,19 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
     },
-     {
+    {
+      "name": "Pytest",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_equal_objects_with_strings\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
       "name": "Pytest",
       "setup": "sudo -H pip3 install -r requirements.txt",
       "run": "pytest -v  -k \"test_not_equal_objects\"",
@@ -39,9 +48,9 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
     },
-     {
+    {
       "name": "Pytest",
       "setup": "sudo -H pip3 install -r requirements.txt",
       "run": "pytest -v  -k \"test_not_equal_objects_different_instances\"",
@@ -49,7 +58,7 @@
       "output": "",
       "comparison": "included",
       "timeout": 10,
-      "points": 2
+      "points": 1
     }
   ]
 }
