@@ -1,5 +1,5 @@
 import pytest
-from objectIdentity import ObjectIdentity
+from object_identity import ObjectIdentity
 
 class TestObjectIdentity:
 
