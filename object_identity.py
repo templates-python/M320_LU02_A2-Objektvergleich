@@ -11,7 +11,7 @@ class ObjectIdentity:
         Erzeugt ein Objekt mit dem Wert des Parameters value
         :param value: ein beliebiger Text
         """
-        self.text = value
+        self._text = value
 
     @property
     def text(self):
